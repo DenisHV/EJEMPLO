@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #e62a2a;
+
+}
+.cara{
+	width: 500px;
+	height: 500px;
+	left: 550px;
+	top: 150px;
+	border-radius: 100%;
+	position: absolute;
+	background-color: white;
+	border: 3px solid black;
+}
+.cejas{
+    width: 90px;
+	height: 55px;
+    left: 340px;
+	border-radius: 50%;
+	position: absolute;
+	color: black;
+	box-shadow:
+		355px 100px 0 0 currentcolor,
+		550px 107px 0 0 currentcolor;
+
+}
+.cejas::before{
+    content: "";
+    position: absolute;
+    left: 75px;
+    top: -120px;
+    width: 150px;
+    height: 120px;
+    border-bottom: solid 50px currentColor;
+    border-radius: 0 0 50% ;
+    transform: rotate(-190deg);
+    transform-origin: right 210px;
+}
+.cejas::after{
+    content: "";
+    position: absolute;
+    left: 470px;
+    top: -140px;
+    width: 150px;
+    height: 120px;
+    border-bottom: solid 50px currentColor;
+    border-radius: 0 0 0 50% ;
+    transform: rotate(-175deg);
+    transform-origin: right 210px;
+}
+.ojos{
+	width: 50px;
+	height: 100px;
+    left: 350px;
+	border-radius: 100%;
+	position: absolute;
+	color: black;
+	box-shadow:
+		350px 200px 0 0 currentcolor,
+		550px 200px 0 0 currentcolor;
+}
+.mustache
+{
+    width: 180px;
+    height: 180px;
+    left: 500px;
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+    box-shadow: 
+    150px 340px 0 0 currentColor,
+    300px 340px 0 0 currentColor;
+}
+.mustache::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 220px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+.mustache::after{
+    content: "";
+    position: absolute;
+    left: 390px;
+    top: 220px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}
+.neon{
+    font-size: 4em;
+    font-weight: 5000000;
+    /*
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 2px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 10px #03e9f4;*/
+    color: black;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.neon:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 10px #03e9f4;
+    
+}
